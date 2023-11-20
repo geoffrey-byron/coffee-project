@@ -1,0 +1,16 @@
+ .raleFont {
+     font-family: 'Raleway', sans-serif;
+ }
+
+ .coffeeFont{
+     font-family: 'Noto Sans Batak', sans-serif;
+ }
+
+ hr{
+     margin: 10px 20px;
+     border: none;
+     height: 3px;
+     background-color: black;
+ }
+
+
