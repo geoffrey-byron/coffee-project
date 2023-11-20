@@ -1,9 +1,14 @@
+body {
+    background-color: blanchedalmond;
+}
+
 .raleFont {
      font-family: 'Raleway', sans-serif;
  }
 
  .coffeeFont{
      font-family: 'Neonderthaw', sans-serif;
+     font-size: 48px;
  }
 
  hr{
@@ -14,9 +19,39 @@
  }
 
 .card-body{
-    background-image: url("img/pexels-polina-tankilevitch-4109748.jpg");
-    width: 100%;
-    height: 20px;
-    background-repeat: no-repeat;
+    background-image: url("img/coffee-beans-top-view-white-background-space-text_176474-5028.avif");
     z-index: 1;
+    color: white;
+}
+
+form.d-flex {
+    font-family: 'Raleway', sans-serif;
+    background-color: #eadfc8; /* Light beige background */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    font-family: 'Raleway', sans-serif;
+    margin-right: 10px;
+    color: #3e2723; /* Dark brown text color */
+}
+
+select, input[type="text"] {
+    font-family: 'Raleway', sans-serif;
+    margin-right: 10px;
+    padding: 8px;
+    border: 1px solid #6d4c41; /* Medium brown border color */
+    border-radius: 4px;
+}
+
+#submit {
+    font-family: 'Raleway', sans-serif;
+    background-color: #4e342e; /* Dark brown submit button background */
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
 }

@@ -10,30 +10,39 @@
     <link href="https://fonts.googleapis.com/css2?family=Neonderthaw&family=Pacifico&family=Raleway&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1 class="text-center coffeeFont">Coffee</h1>
-    <form class="d-flex justify-content-end p-3">
-        <label for="roast-selection"></label>
-        <select id="roast-selection">
-            <option>light</option>
-            <option>medium</option>
-            <option>dark</option>
-            <option>All</option>
-        </select>
-        <input id="coffee-search" type="text" placeholder="Find Your Roast" />
-        <input id="submit" type="submit" />
-    </form>
+    <h1 class="text-center coffeeFont">The Coffee Company</h1>
     <hr>
     <div class="container-fluid">
-        <div class="row ">
-            <div class="col-5 raleFont" id="coffees">
-                <!-- Content for the first column (coffees) goes here -->
+        <div class="row">
+            <div class="col-6 raleFont mt-3" id="coffees">
+                <!-- Content for the first container goes here -->
             </div>
-            <div>
 
+            <div class="col-6 mt-3">
+                <!-- Content for the second container goes here -->
+                <div class="container">
+                    <div class="row">
+                        <form class="d-flex p-3">
+                            <label for="roast-selection"></label>
+                            <select id="roast-selection">
+                                <option>light</option>
+                                <option>medium</option>
+                                <option>dark</option>
+                                <option>All</option>
+                            </select>
+                            <input id="coffee-search" type="text" placeholder="Find Your Roast" />
+                            <input id="submit" type="submit" />
+                        </form>
+                        <p>
+                        <p>
+                            Deep in the heart of Texas, Buck "Tex" Thornton and Sipho "Safari" Nkosi, bonded by a love for coffee, joined forces to create "Tex & Safari's Roast Roundup." Blending Texan boldness with African adventure, their flagship "Lone Star Safari" roast became a global sensation. With cowboy hats on lions and longhorns sipping coffee, their coffee shops became hubs of cross-continental camaraderie, where every cup told a tale of rugged terrains and untamed flavors. The legend of Tex & Safari's lives on, leaving behind a legacy as bold as the brew itself.
+                        </p>
+                        <img src="img/blend.jpeg" alt="coffee-red">
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-
     <script src="main.js"></script>
 </body>
 </html>
