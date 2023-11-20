@@ -1,16 +1,22 @@
- .raleFont {
+.raleFont {
      font-family: 'Raleway', sans-serif;
  }
 
  .coffeeFont{
-     font-family: 'Noto Sans Batak', sans-serif;
+     font-family: 'Neonderthaw', sans-serif;
  }
 
  hr{
-     margin: 10px 20px;
+     margin: 0px 20px;
      border: none;
      height: 3px;
      background-color: black;
  }
 
-
+.card-body{
+    background-image: url("img/pexels-polina-tankilevitch-4109748.jpg");
+    width: 100%;
+    height: 20px;
+    background-repeat: no-repeat;
+    z-index: 1;
+}

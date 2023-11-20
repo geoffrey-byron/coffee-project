@@ -70,3 +70,7 @@ tbody.innerHTML = renderCoffees(coffees);
 
 submitButton.addEventListener('click', updateCoffees);
 submitButton.addEventListener('click', searchByName);
+
+const image = document.createElement('card-body');
+image.src = "img/pexels-igor-haritanovich-1695052.jpg";
+document.body.appendChild(image)
