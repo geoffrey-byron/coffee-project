@@ -30,6 +30,20 @@ function updateCoffees(e) {
     });
     tbody.innerHTML = renderCoffees(filteredCoffees);
 }
+function updateCoffees(e) {
+    e.preventDefault();
+    const selectedRoast = roastSelection.value;
+
+    if (selectedRoast === 'All') {
+        // If "All" is selected, render all coffees
+        tbody.innerHTML = renderCoffees(coffees);
+    } else {
+        // Otherwise, filter and render based on the selected roast
+        const filteredCoffees = coffees.filter(coffee => coffee.roast === selectedRoast);
+        tbody.innerHTML = renderCoffees(filteredCoffees);
+    }
+}
+
 
 // from http://www.ncausa.org/About-Coffee/Coffee-Roasts-Guide
 const coffees = [
