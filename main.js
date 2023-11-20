@@ -1,10 +1,12 @@
 "use strict"
 
 function renderCoffee(coffee) {
-    return `<div class="coffee">
-                <p>ID: ${coffee.id}</p>
-                <h2>${coffee.name}</h2>
-                <p>Roast: ${coffee.roast}</p>
+    return `<div class="coffee card mb-2">
+<div class="card-body">
+                <p class="card-text d-none">ID: ${coffee.id}</p>
+                <h2 class="card-title">${coffee.name}</h2>
+                <p class="card-text">Roast: ${coffee.roast}</p>
+                </div>
             </div>`;
 }
 
