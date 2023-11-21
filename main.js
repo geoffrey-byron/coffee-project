@@ -93,11 +93,11 @@ form.addEventListener("submit", e =>{
 
     //adding appropriate classes
     p.classList.add("m-0");
-    doneBtn.classList.add("btn", "btn-danger");
+    doneBtn.classList.add("btn", "btn-light");
     li.classList.add("add-coffee-item", "new-coffee-item", "d-flex", "justify-content-between", "align-items-center");
 
     //Display content
-    doneBtn.innerText = "Done";
+    doneBtn.innerText = "Checkout  🛒";
     p.innerText = userInput;
 
     //put into document by appending child
