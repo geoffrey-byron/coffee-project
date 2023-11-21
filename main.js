@@ -86,14 +86,14 @@ newCoffeeform.addEventListener("submit", e =>{
     input.value = "";
 
     //creating elements
-    const div = document.createElement("div");
-    div.classList.add("card-body");
+    // const div = document.createElement("div");
+    // div.classList.add("card-body");
 
-    const p = document.createElement("p");
-    p.innerText = userInput;
+    const div = document.createElement("div");
+    div.innerText = userInput;
 
 // Append child elements
     newCoffeeList.appendChild(div);
-    div.appendChild(p);
+    // div.appendChild();
 
 })
