@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Neonderthaw&family=Pacifico&family=Raleway&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1 class="text-center coffeeFont">The Coffee Company</h1>
+    <h1 class="coffeeFont text text-center">The Coffee Company</h1>
     <hr>
     <div class="container-fluid">
         <div class="row">
@@ -30,22 +30,19 @@
                                 <option>dark</option>
                                 <option>All</option>
                             </select>
-                            <input id="coffee-search" type="text" placeholder="Find Your Roast" />
-                            <input id="submit" type="submit" />
+                            <input class= "form-control" id="coffee-search" type="text" placeholder="Find Your Roast" />
                         </form>
+                        <input class="mt-3" id="submit" type="submit" />
                         <p>
                         <p>
                             Deep in the heart of Texas, Buck "Tex" Thornton and Sipho "Safari" Nkosi, bonded by a love for coffee, joined forces to create "Tex & Safari's Roast Roundup." Blending Texan boldness with African adventure, their flagship "Lone Star Safari" roast became a global sensation. With cowboy hats on lions and longhorns sipping coffee, their coffee shops became hubs of cross-continental camaraderie, where every cup told a tale of rugged terrains and untamed flavors. The legend of Tex & Safari's lives on, leaving behind a legacy as bold as the brew itself.
                         </p>
                         <img src="img/blend.jpeg" alt="coffee-red">
                         <div class="container">
-                        <header class="text-center my-4">
-                            <h1>Wanna add a blend?</h1>
-                        </header>
                         <div class="row">
-                            <section class="border border-lg-none p-4 col-lg-4">
-                                <form id="add-coffee-form">
-                                    <h3>
+                            <section class="mt-4">
+                                <form class="add-coffee-form" id="add-coffee-form">
+                                    <h3 class="text-center">
                                         <label class="form-label" for="add-coffee">Enter your unique blend</label>
                                     </h3>
                                     <input class="form-control" type="text" name="add-coffee" id="add-coffee">

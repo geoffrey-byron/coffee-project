@@ -1,8 +1,9 @@
+
 body {
     background-color: blanchedalmond;
 }
 
-.raleFont {
+.raleFont{
      font-family: 'Raleway', sans-serif;
  }
 
@@ -24,7 +25,7 @@ body {
     color: white;
 }
 
-form.d-flex {
+form.d-flex, #add-coffee-form{
     font-family: 'Raleway', sans-serif;
     background-color: #eadfc8; /* Light beige background */
     padding: 15px;
