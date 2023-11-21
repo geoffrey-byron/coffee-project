@@ -76,13 +76,13 @@ document.body.appendChild(image)
 
 //TO-do js
 
-const form = document.querySelector("#to-do-form");
+const form = document.querySelector("#add-coffee-form");
 const addBtn = document.querySelector("#to-do-form button");
 
 form.addEventListener("submit", e =>{
     e.preventDefault();
-    const input = document.querySelector("#to-do");
-    const toDoList = document.querySelector("#to-do-list");
+    const input = document.querySelector("#add-coffee");
+    const toDoList = document.querySelector("#add-coffee-list");
     const userInput = input.value;
     input.value = "";
 
@@ -94,7 +94,7 @@ form.addEventListener("submit", e =>{
     //adding appropriate classes
     p.classList.add("m-0");
     doneBtn.classList.add("btn", "btn-danger");
-    li.classList.add("to-do-item", "list-group-item", "d-flex", "justify-content-between", "align-items-center");
+    li.classList.add("add-coffee-item", "new-coffee-item", "d-flex", "justify-content-between", "align-items-center");
 
     //Display content
     doneBtn.innerText = "Done";
