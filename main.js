@@ -76,38 +76,26 @@ document.body.appendChild(image)
 
 //TO-do js
 
-const form = document.querySelector("#add-coffee-form");
-const addBtn = document.querySelector("#to-do-form button");
+const newCoffeeform = document.querySelector("#add-coffee-form");
 
-form.addEventListener("submit", e =>{
+newCoffeeform.addEventListener("submit", e =>{
     e.preventDefault();
     const input = document.querySelector("#add-coffee");
-    const toDoList = document.querySelector("#add-coffee-list");
+    const newCoffeeList = document.querySelector("#add-coffee-list");
     const userInput = input.value;
     input.value = "";
 
     //creating elements
-    const li = document.createElement("li");
+    const div = document.createElement("div");
+    div.classList.add("card-body");
+
     const p = document.createElement("p");
-    const doneBtn = document.createElement("button");
 
-    //adding appropriate classes
-    p.classList.add("m-0");
-    doneBtn.classList.add("btn", "btn-danger");
-    li.classList.add("add-coffee-item", "new-coffee-item", "d-flex", "justify-content-between", "align-items-center");
-
-    //Display content
-    doneBtn.innerText = "Done";
+// Display content
     p.innerText = userInput;
 
-    //put into document by appending child
-    toDoList.appendChild(li);
-    li.appendChild(p);
-    li.appendChild(doneBtn);
-
-    //
-    doneBtn.addEventListener("click", e => {
-        e.target.parentElement.remove();
-    })
+// Append child elements
+    newCoffeeList.appendChild(div);
+    div.appendChild(p);
 
 })
