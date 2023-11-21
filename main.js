@@ -90,8 +90,6 @@ newCoffeeform.addEventListener("submit", e =>{
     div.classList.add("card-body");
 
     const p = document.createElement("p");
-
-// Display content
     p.innerText = userInput;
 
 // Append child elements
