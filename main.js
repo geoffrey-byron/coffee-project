@@ -1,5 +1,6 @@
 "use strict"
 
+// Function to render a single coffee card
 function renderCoffee(coffee) {
     return `<div class="coffee card mb-2">
                 <div class="card-body">
@@ -9,6 +10,7 @@ function renderCoffee(coffee) {
                 </div>
             </div>`;
 }
+// Function to render a list of coffee cards
 function renderCoffees(coffees) {
     let html = '';
     for(let i = 0; i < coffees.length; i++) {
@@ -17,6 +19,7 @@ function renderCoffees(coffees) {
     return html;
 }
 
+// Function to update the displayed coffees based on selected roast
 function updateCoffees(e) {
     e.preventDefault();
     const selectedRoast = roastSelection.value;
@@ -29,9 +32,10 @@ function updateCoffees(e) {
         tbody.innerHTML = renderCoffees(filteredCoffees);
     }
 }
-
+// Input for coffee name search
 const coffeeSearchInput = document.getElementById('coffee-search');
 
+// Function to update displayed coffees based on search input
 function updateCoffeesBySearch(e) {
     e.preventDefault();
 
@@ -41,6 +45,7 @@ function updateCoffeesBySearch(e) {
     tbody.innerHTML = renderCoffees(filteredCoffees);
 }
 
+// Event listener for coffee name search input
 coffeeSearchInput.addEventListener('input', updateCoffeesBySearch);
 
 // from http://www.ncausa.org/About-Coffee/Coffee-Roasts-Guide
@@ -61,20 +66,26 @@ const coffees = [
     {id: 14, name: 'French', roast: 'dark'},
 ];
 
+// Displayed coffee container, button to submit roast filter, and dropdown for selecting roast type
 const tbody = document.querySelector('#coffees');
 const submitButton = document.querySelector('#submit');
 const roastSelection = document.querySelector('#roast-selection');
 
+// Initial rendering of all coffees
 tbody.innerHTML = renderCoffees(coffees);
 
+// Event listener for the roast filter button
 submitButton.addEventListener('click', updateCoffees);
 
+// Creating an image element and appending it to the body
 const image = document.createElement('card-body');
 image.src = "img/pexels-igor-haritanovich-1695052.jpg";
 document.body.appendChild(image)
 
+// Form to add a new coffee blend
 const newCoffeeform = document.querySelector("#add-coffee-form");
 
+// Event listener for submitting the new coffee blend form
 newCoffeeform.addEventListener("submit", e =>{
     e.preventDefault();
     const input = document.querySelector("#add-coffee");
@@ -82,7 +93,7 @@ newCoffeeform.addEventListener("submit", e =>{
     const userInput = input.value;
     input.value = "";
 
-   // creating elements
+    // Creating elements for the new coffee blend
     const div = document.createElement("div");
     div.classList.add("card-body");
     div.style.contain = ""
@@ -94,7 +105,6 @@ newCoffeeform.addEventListener("submit", e =>{
     div.innerText = userInput;
     div.style.fontSize = "30px";
 
-// Append child elements
+// Append child elements to the new coffee blend list
     newCoffeeList.appendChild(div);
-
 })
