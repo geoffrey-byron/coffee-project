@@ -61,7 +61,6 @@ const coffees = [
     {id: 14, name: 'French', roast: 'dark'},
 ];
 
-
 const tbody = document.querySelector('#coffees');
 const submitButton = document.querySelector('#submit');
 const roastSelection = document.querySelector('#roast-selection');
@@ -74,8 +73,6 @@ const image = document.createElement('card-body');
 image.src = "img/pexels-igor-haritanovich-1695052.jpg";
 document.body.appendChild(image)
 
-//TO-do js
-
 const newCoffeeform = document.querySelector("#add-coffee-form");
 
 newCoffeeform.addEventListener("submit", e =>{
@@ -85,15 +82,19 @@ newCoffeeform.addEventListener("submit", e =>{
     const userInput = input.value;
     input.value = "";
 
-    //creating elements
-    // const div = document.createElement("div");
-    // div.classList.add("card-body");
-
+   // creating elements
     const div = document.createElement("div");
+    div.classList.add("card-body");
+    div.style.contain = ""
+    div.style.height = "80px";
+    div.style.marginTop = ".5em";
+    div.style.paddingTop = ".5em";
+    div.style.paddingLeft = ".5em";
+    div.style.fontFamily="'Raleway', sans-serif";
     div.innerText = userInput;
+    div.style.fontSize = "30px";
 
 // Append child elements
     newCoffeeList.appendChild(div);
-    // div.appendChild();
 
 })

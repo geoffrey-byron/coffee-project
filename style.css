@@ -56,7 +56,3 @@ select, input[type="text"] {
     border-radius: 4px;
     cursor: pointer;
 }
-
-div{
-    border: black;
-}
